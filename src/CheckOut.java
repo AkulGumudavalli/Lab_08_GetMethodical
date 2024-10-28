@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Checkout{
+class CheckOut{
     public static void main(String[] args){
         boolean done = false;
         double total = 0.00;
