@@ -130,4 +130,27 @@ public class SafeInput {
         }while(!gotValue);
         return retString;
     }
+    public static void prettyHeader(String message){
+        int total_char = 60;
+        int message_char = 60 - message.length();
+        int left_padding = message_char/2;
+        int right_padding = message_char - left_padding;
+        for(int i = 0; i<=total_char;i++){
+            System.out.print("*");
+        }
+        System.out.print("\n***");
+        for (int i =0; i<=left_padding-4;i++){
+            System.out.print(" ");
+        }
+        System.out.print(message);
+        for (int i =0; i<=right_padding-3;i++){
+            System.out.print(" ");
+        }
+        System.out.print("***\n");
+
+        for(int i = 0; i<=total_char;i++){
+            System.out.print("*");
+        }
+
+    }
 }
